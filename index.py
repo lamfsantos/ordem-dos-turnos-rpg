@@ -9,13 +9,12 @@ lista = [('Personagem', 'Jogador', 'Raça', 'Iniciativa', 'Defesa')]
 #			('teste_personagem1', 'teste_jogador1', 'teste_raça1', 10, '21'),
 #			('teste_personagem2', 'teste_jogador2', 'teste_raça2', 12, '43')
 #lista = []
-
+lista_monstros = [('Monstros', 'Iniciativa', 'Defesa')]
 iniciativa = 0
-
 class Table:
-      
-	def __init__(self,root,total_columns,total_rows,lst):
-  
+
+	def __init__(self,root,total_columns,total_rows,lista_de_personagens):
+
         # code for creating table
 		for i in range(total_rows):
 			for j in range(total_columns):
@@ -23,19 +22,19 @@ class Table:
 
 				if(i==0):
 					fg = 'black'
-				elif(lista[i][3] == iniciativa):
+				elif(lista_de_personagens[i][3] == iniciativa):
 					fg = 'red'
 
 				self.e = Entry(root, width=18, fg=fg,font=('Arial',12,'bold'))
 
 				self.e.grid(row=i, column=j)
-				self.e.insert(END, lst[i][j])
+				self.e.insert(END, lista_de_personagens[i][j])
 
 
 def create_view_cadastro():
 	window = tk.Tk()
 	window.title("RPG")
-	window.geometry("345x180")
+	window.geometry("350x180")
 	window.configure(background="#008B8B")
 
 
@@ -137,6 +136,10 @@ def create_view_iniciativa(lista):
 
 	btn3 = tk.Button(window, text='Atualizar', command=lambda: refresh_view(window))
 	btn3.grid(column=2)
+
+	total_rows_monstros = len(lista_monstros)
+	total_columns_monstros = len(lista_monstros[0])
+	table = Table(window, total_columns_monstros, total_rows_monstros, lista_monstros)
 
 	return window
 
