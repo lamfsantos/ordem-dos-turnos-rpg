@@ -1,0 +1,3 @@
+docker build -t mobile-app .
+
+docker run -p 19006:19006 mobile-app

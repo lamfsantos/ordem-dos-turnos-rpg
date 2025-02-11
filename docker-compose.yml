@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+  mobile:
+    build: ./mobile
+    ports:
+      - "19006:19006"
+
+networks:
+  default:
+    driver: bridge
