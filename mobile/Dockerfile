@@ -13,4 +13,6 @@ COPY ./src ./src
 
 EXPOSE 19006
 
-CMD ["expo", "start", "--tunnel", "--host", "0.0.0.0"]
+#CMD ["expo", "start", "--host", "0.0.0.0"]
+
+CMD ["expo", "start", "--tunnel"]
