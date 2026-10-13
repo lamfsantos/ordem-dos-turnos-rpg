@@ -1,0 +1,18 @@
+export const STANDARD_CONDITIONS = [
+  { id: 'blinded', name: 'Cego', color: '#64748b', desc: 'Falha automática em testes de visão. Ataques contra têm vantagem.' },
+  { id: 'charmed', name: 'Enfeitiçado', color: '#ec4899', desc: 'Não pode atacar o encantador. Vantagem em interações sociais.' },
+  { id: 'deafened', name: 'Ensurdecido', color: '#94a3b8', desc: 'Falha em testes de audição.' },
+  { id: 'frightened', name: 'Amedrontado', color: '#eab308', desc: 'Desvantagem em testes e ataques enquanto a fonte estiver à vista.' },
+  { id: 'grappled', name: 'Agarrado', color: '#f97316', desc: 'Deslocamento reduzido a 0.' },
+  { id: 'incapacitated', name: 'Incapacitado', color: '#ef4444', desc: 'Não pode realizar ações ou reações.' },
+  { id: 'invisible', name: 'Invisível', color: '#38bdf8', desc: 'Impossível de ser visto sem magia. Vantagem em ataques, ataques contra têm desvantagem.' },
+  { id: 'paralyzed', name: 'Paralisado', color: '#dc2626', desc: 'Incapacitado, não pode se mover ou falar. Acertos a até 1.5m são críticos automáticos.' },
+  { id: 'petrified', name: 'Petrificado', color: '#78716c', desc: 'Transformado em substância sólida inanimada.' },
+  { id: 'poisoned', name: 'Envenenado', color: '#22c55e', desc: 'Desvantagem em jogadas de ataque e testes de atributo.' },
+  { id: 'prone', name: 'Caído', color: '#d97706', desc: 'Só pode rastejar. Desvantagem em seus ataques; ataques corpo a corpo têm vantagem contra.' },
+  { id: 'restrained', name: 'Contido', color: '#f59e0b', desc: 'Deslocamento 0. Desvantagem em testes de Destreza e ataques.' },
+  { id: 'stunned', name: 'Atordoado', color: '#a855f7', desc: 'Incapacitado, fala aos tropeços, falha em testes de Força e Des.' },
+  { id: 'unconscious', name: 'Inconsciente', color: '#991b1b', desc: 'Incapacitado, cai no chão. Acertos a 1.5m são críticos.' },
+  { id: 'concentrating', name: 'Concentrando', color: '#06b6d4', desc: 'Mantendo concentração em magia ativa.' },
+  { id: 'blessed', name: 'Abençoado / Buff', color: '#10b981', desc: 'Sob efeito positivo ou bônus especial.' },
+];
